@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保卫兔子</title>
+    <link rel="stylesheet" href="css/index1.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/al.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="jiemianqwe" id="jiemianqwe">
+        <div class="d2" id="tit">
+            <p>得分:<span>0</span>分</p>
+            <p>正确率:<span>100%</span></p>
+            <p>速度:<span>0</span>个/分</p>
+        </div>
+        <div class="game" id="game">
+            <!-- 四个操作按钮，使用了事件委托进行js交互 -->
+            <div class="d1 dd1 shake" id="zhanting">暂停</div>
+            <a href="index.html">
+                <div class="d1 dd2 shake" id="tuicu">退出</div>
+            </a>
+            <a href="shezi.html">
+                <div class="d1 dd3 shake" id="shezhi">设置</div>
+            </a>
+            <div class="d1 dd4 shake" id="kaishi">开始</div>
+        </div>
+    </div>
+</body>
+
+<script src="js/yemian.js" type="text/javascript"></script>
+
+</html>
