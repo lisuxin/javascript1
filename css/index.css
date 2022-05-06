@@ -1,1 +1,131 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: black;
+    /* outline: 1px dashed purple; */
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard{
+    outline-width: 3px;
+}
+ul.row{
+    display: flex;
+}
+ul.row li{
+    outline-width: 2px;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+    border-radius: .4em;
+    /* border: 2px solid; */
+    color: rgba(0, 0, 0, 7);
+    letter-spacing: 1px;
+    margin: 0.4em;
+}
+
+#tab{
+    width: 5em;
+}
+#caps{
+    width: 6em;
+}
+#leftShift{
+    width: 8em;
+}
+#enter{
+    width: 6em;
+}
+#rightShift{
+    width: 8em;
+}
+#back{
+    width: 5em;
+}
+.little{
+    background-color: crimson;
+    border:2px solid crimson;
+}
+.little.selected{
+    background-color: transparent;
+    color: crimson;
+}
+
+.ring{
+    background-color: coral;
+    border:2px solid coral;
+}
+.ring.selected{
+    background-color:  transparent;
+    color:coral;
+}
+.middle{
+    background-color: darkorange;
+    border:2px solid darkorange;
+}
+.middle.selected{
+    background-color: transparent;
+    color: darkorange;
+}
+
+.forefinger1st{
+    background-color: gold;
+    border:2px solid gold;
+}
+.forefinger1st.selected{
+    background-color: transparent;
+    color:gold;
+}
+.forefinger2nd{
+    background-color: khaki;
+    border:2px solid khaki;
+}
+.forefinger2nd.selected{
+    background-color: transparent;
+    color: khaki;
+}
+.selected{
+    animation:selected .3s infinite; 
+}
+@Keyframes selected{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translate(-3px,3px);
+    }
+    40%{
+        transform: translate(-3px,-3px);
+    }
+    60%{
+        transform: translate(3px,-3px);
+    }
+    80%{
+        transform: translate(3px,3px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.press{
+    animation: press .3s;
+}
+@Keyframes press{
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
