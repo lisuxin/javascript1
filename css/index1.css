@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(45deg, #D16BA5, #86A8E7, #5FFBF1);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.tp {
+    -webkit-transformF: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+    width: 100%;
+}
+
+.shake {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgb(76, 162, 213);
+    border-radius: 50PX;
+    margin: 5px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.25s;
+}
+
+.shake:hover {
+    -webkit-animation: shake 0.25s;
+    background: rgb(92, 163, 227);
+}
+
+
+.shak:hover {
+    -webkit-animation: shake 0.25s;
+}
+
+@-webkit-keyframes shake {
+
+    0%,
+    10%,
+    55%,
+    90%,
+    94%,
+    98%,
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale(1.14, 0.86);
+    }
+
+    75% {
+        -webkit-transform: scale(0.92, 1.08);
+    }
+
+    92% {
+        -webkit-transform: scale(1.04, 0.96);
+    }
+
+    96% {
+        -webkit-transform: scale(1.02, 0.98);
+    }
+
+    99% {
+        -webkit-transform: scale(1.01, 0.99);
+    }
+}
+
+.quanju {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/beijing.jpg);
+    background-size: cover;
+}
+
+.a1 {
+    width: 85%;
+    height: 5%;
+    float: right;
+    text-align: right;
+    color: #fff;
+    font-size: 10px;
+}
+
+.a2 {
+    width: 1%;
+    height: 5%;
+    float: right;
+}
+
+.a3 {
+    width: 10%;
+    height: 5%;
+}
+
+.a4 {
+    width: 3%;
+    height: 80%;
+    float: right;
+}
+
+.a5 {
+    width: 100%;
+    height: 5%;
+    float: right;
+    position: relative;
+}
+
+.a6 {
+    width: 100%;
+}
+
+.a7 {
+    width: 100%;
+    height: 5%;
+    float: right;
+    position: relative;
+    font-size: 100vh;
+}
+
+.a8 {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(42, 57, 112), yelLow, rgb(81, 128, 209));
+    position: relative;
+    left: 34.5%;
+    float: left;
+    opacity: 70%;
+}
+
+.a9 {
+    width: 20%;
+    height: 70%;
+    position: absolute;
+    left: 39.5%;
+    box-shadow: 0px 0px 50px #D65DB1;
+    opacity: 90%;
+    letter-spacing: 2vmin;
+    font-size: 3vmin;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.a11 {
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(90deg, rgb(42, 57, 112), rgb(0, 0, 0), rgb(81, 128, 209));
+    position: relative;
+    top: 14%;
+    color: #cf556c;
+    text-align: center;
+    font-size: 3vmin;
+    overflow: hidden;
+}
+
+.b1 {
+    width: 50%;
+    height: 70%;
+    background: #86A8E7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.b2 {
+    width: 100%;
+    height: 10%;
+    background: #86A8E7;
+    text-align: center;
+    font-size: 23px;
+}
+
+.b3 {
+    width: 100%;
+    height: 5%;
+}
+
+.me {
+    width: 100%;
+    height: 100%;
+    background: #D16BA5;
+}
+
+#dv {
+    width: 20%;
+    height: 10%;
+    background: rgba(255, 255, 255, 0.2) 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.b4 {
+    width: 100%;
+    height: 5%;
+}
+
+.b5 {
+    width: 25%;
+    height: 10%;
+    position: absolute;
+    left: 75%;
+    box-shadow: 0px 0px 10px #D65DB1;
+    opacity: 90%;
+    letter-spacing: 1vmin;
+    font-size: 4vmin;
+    overflow: hidden;
+    text-align: center;
+    display: inline;
+}
+
+.b8 {
+    width: 13%;
+    height: 10%;
+    position: absolute;
+    left: 5%;
+    box-shadow: 0px 0px 10px #D65DB1;
+    opacity: 90%;
+    letter-spacing: 1vmin;
+    font-size: 4vmin;
+    overflow: hidden;
+    text-align: center;
+    display: inline;
+}
+
+.b6 {
+    width: 100%;
+    height: 10%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 7.6vw;
+    font-size: 2vmin;
+    color: #fff;
+}
+
+.b7 {
+    width: 100%;
+    line-height: 7vmin;
+    height: 59%;
+    font-size: 2vmin;
+    color: #fff;
+}
+
+.dd1 {
+    overflow: hidden;
+    top: 90%;
+}
+
+.dd2 {
+    overflow: hidden;
+    top: 84%;
+}
+
+.dd3 {
+    overflow: hidden;
+    top: 78%;
+}
+
+.dd4 {
+    overflow: hidden;
+    top: 72%;
+}
+
+
+.d1 {
+    width: 5%;
+    height: 3%;
+    position: absolute;
+    box-shadow: 0px 0px 10px #D65DB1;
+    opacity: 90%;
+    letter-spacing: 1vmin;
+    font-size: 2vmin;
+    overflow: hidden;
+    text-align: center;
+}
+
+#cv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qwe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 10%;
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+}
+
+.d2 {
+    top: 90%;
+    left: 86%;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+}
+
+.jiemianqwe {
+    width: 100vw;
+    height: 100%;
+}
+
+.active {
+    position: absolute;
+    top: -100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    
+    background: url(../images/兔子.jpg);
+    background-size: 100%,100%;
+}
+
+
+.rty {
+    width: 100%;
+    height: 5%;
+    background-color: transparent;
+    border-style: none;
+    color: #fff;
+}
